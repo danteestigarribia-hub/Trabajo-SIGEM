@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Docente - SIGEM</title>
 <style>
-*{box-sizing:border-box} body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#eef2f7;display:flex;min-height:100vh;color:#0f172a}
-.sidebar{width:250px;background:linear-gradient(180deg,#0f172a 0%,#1e3a8a 100%);color:white;padding:28px 16px;flex-shrink:0}
+*{box-sizing:border-box} body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#dbeafe;display:flex;min-height:100vh;color:#0f172a}
+.sidebar{width:250px;background:#0f172a;color:white;padding:28px 16px;flex-shrink:0}
 .sidebar .logo{display:flex;align-items:center;gap:10px;padding:0 10px 22px;border-bottom:1px solid rgba(255,255,255,.15);margin-bottom:22px}
 .sidebar .logo span{font-size:28px}
 .sidebar .logo b{font-size:24px;letter-spacing:2px}
@@ -15,17 +15,17 @@
 .sidebar a{display:flex;gap:10px;align-items:center;color:#cbd5e1;text-decoration:none;padding:13px 14px;border-radius:12px;margin-bottom:6px;font-size:15px;transition:.2s}
 .sidebar a:hover{background:rgba(255,255,255,.12);color:white;transform:translateX(3px)}
 .sidebar a.active{background:white;color:#1e40af;font-weight:700;box-shadow:0 4px 15px rgba(0,0,0,.25)}
-.main{flex:1;padding:30px 34px}
+.main{flex:1;padding:30px 34px;background:#dbeafe}
 .header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
-.header h2{margin:0;font-size:26px}
-.header p{margin:4px 0 0;color:#64748b;font-size:14px}
+.header h2{margin:0;font-size:26px;color:#0f172a}
+.header p{margin:4px 0 0;color:#475569;font-size:14px}
 .avatar{width:44px;height:44px;background:#1e40af;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px}
 .top{display:flex;gap:16px;margin-bottom:20px}
-.stat{flex:1;background:white;border-radius:18px;padding:20px;display:flex;gap:16px;align-items:center;box-shadow:0 4px 18px rgba(0,0,0,.06);border:1px solid #e2e8f0}
+.stat{flex:1;background:white;border-radius:18px;padding:20px;display:flex;gap:16px;align-items:center;box-shadow:0 4px 18px rgba(0,0,0,.06);border:1px solid #e2e8f0;color:#0f172a}
 .stat .icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px}
 .stat b{font-size:28px;line-height:1;display:block}
 .stat span{font-size:11px;color:#64748b;letter-spacing:1px;font-weight:700}
-.card{background:white;border-radius:20px;padding:24px;box-shadow:0 4px 18px rgba(0,0,0,.06);margin-bottom:16px;border:1px solid #e2e8f0}
+.card{background:white;border-radius:20px;padding:24px;box-shadow:0 4px 18px rgba(0,0,0,.06);margin-bottom:16px;border:1px solid #e2e8f0;color:#0f172a}
 .card h3{margin:0 0 16px;font-size:17px}
 .mesa{background:linear-gradient(90deg,#eff6ff,#f8fafc);border-left:6px solid #1e40af;padding:16px 18px;border-radius:14px;display:flex;justify-content:space-between;align-items:center}
 .mesa b{font-size:17px}
@@ -46,7 +46,6 @@ input{padding:10px 12px;border:1px solid #ddd;border-radius:10px;width:90px;font
   <a href="docente.php?v=alumnos" class="<?php echo $v=='alumnos'?'active':''; ?>">👥 Alumnos</a>
   <a href="docente.php?v=notas" class="<?php echo $v=='notas'?'active':''; ?>">✏️ Notas</a>
   <a href="docente.php?v=actas" class="<?php echo $v=='actas'?'active':''; ?>">🖨️ Actas</a>
-  <div style="margin-top:30px;padding:14px;background:rgba(255,255,255,.1);border-radius:14px;font-size:13px;line-height:1.5">📍 <b>Ciclo 2026</b><br><span style="color:#cbd5e1">Turno Mañana - Mesas Diciembre</span></div>
 </div>
 <div class="main">
   <div class="header"><div><h2>Panel del Docente</h2><p>Gestión de mesas de examen y calificaciones</p></div><div class="avatar">D</div></div>
